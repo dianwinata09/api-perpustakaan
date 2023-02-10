@@ -4,6 +4,8 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\Models\SiswaM;
+use App\Http\Controllers\Controller;
+use Exception;
 
 class SiswaC extends Controller
 {
@@ -12,3 +14,4 @@ class SiswaC extends Controller
     return response()->json($siswa);
    }
 }
+
