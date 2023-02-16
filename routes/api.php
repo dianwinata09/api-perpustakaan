@@ -1,11 +1,11 @@
 <?php
 
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\PostC;
+use Illuminate\Support\Facades\Route;
 
 Route::get('/', function(){
-    return 'Hello World API';
+    return 'Hello World API !';
 });
-
 Route::get('/posts', [PostC::class, 'index']);
+Route::get('/posts/{id}', [PostC::class,'detail']);
